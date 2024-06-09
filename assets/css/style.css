@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Poppins", sans-serif;
+}
+
+.hero_part {
+    background: url(../image/hero-bg.jpg);
+    padding-bottom: 32px;
+}
+
+.alignment {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.menu_part {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu li a {
+    color: #222;
+    font-size: 18px;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+    padding: 0 18px;
+    transition: 0.5s;
+}
+
+.menu li a:hover {
+    color: #7371f9;
+}
+
+.collapse_btn {
+    padding: 5px 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    display: none;
+}
+
+.home_con {
+    text-align: center;
+}
+
+.home_con h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+}
+
+.home_con h1 {
+    font-size: 90px;
+    color: #222;
+}
+
+.home_con h1 span {
+    color: #7371f9;
+    font-family: 'poppins';
+}
+
+.home_con p {
+    font-size: 21px;
+    color: #615978;
+}
+
+.home_con h3 {
+    font-size: 36px;
+    color: #00B22D;
+}
+
+.home_btn {
+    /* padding-top: 20px; */
+    padding: 20px;
+}
+
+.home_btn a:hover {
+    background: #7371f9;
+    /* color: #222; */
+    color: #fff;
+    border: 2px solid #7371f9;
+}
+
+.home_btn a {
+    padding: 15px 32px;
+    /* background: #7371f9; */
+    background: transparent;
+    /* color: #fff; */
+    color: #222;
+    font-family: 'poppins';
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin: 0 5px;
+    border: 2px solid #7371f9;
+    transition: 0.6s;
+    display: inline-block;
+}
+
+.right_con ul li a {
+    font-size: 24px;
+    color: #222;
+    transition: 0.5s;
+}
+
+.right_con ul li a:hover {
+    color: #7371f9;
+}
+.right_con ul {
+    display: flex;
+    column-gap: 24px;
+    /* rotate: 90deg; */
+    transform: rotate(90deg);
+}
+
+.right_con {
+    position: absolute;
+    top: 330px;
+    right: -150px;
+}
+
+.hero_part{
+    position: relative;
+    overflow: hidden;
+}
+
+.why_part {
+    padding: 60px 0;
+}
+
+.why_head {
+    text-align: center;
+    width: 570px;
+    margin: auto;
+}
+
+.why_head h2 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+    position: relative;
+    width: 350px;
+    margin: auto;
+}
+
+.why_head h2::before {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    background: #7371f9;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+.why_head h2::after {
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    background: #7371f9;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.why_head p {
+    font-size: 20px;
+    color: #948daa;
+    font-family: 'poppins';
+}
+
+.why_con_main {
+    display: flex;
+    gap: 24px;
+    padding-top: 48px;
+}
+
+.why_con {
+    background: white;
+    border: 1px solid #e0e0e0;
+    padding: 48px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.why_con:hover::before {
+    transform: rotate(-10deg);
+}
+.why_con::before {
+    position: absolute;
+    content: '';
+    height: 100%;
+    width: 100%;
+    background: #7371f9;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.why_con:hover {
+    box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.1);
+    border-color: #fff;
+}
+
+.why_con i {
+    color: #7371f9;
+    font-size: 64px;
+}
+
+.why_con h3 {
+    color: #222;
+    font-size: 28px;
+    padding: 15px 0;
+}
+.why_con p {
+    color: #615978;
+    font-size: 15px;
+    font-family: 'poppins';
+}
+
+.about_part {
+    padding: 100px 0;
+    background: #f2f5fb;
+}
+
+.about_con_main {
+    display: flex;
+    column-gap: 120px;
+}
+.about_img {
+    width: 50%;
+    height: 500px;
+    background: url(../image/about-image-2.png), url(../image/about-image-1.png);
+    background-repeat: no-repeat;
+    background-size: 50% auto, 80% auto;
+    background-position: bottom left, top right;
+}
+
+.about_con {
+    width: 50%;
+}
+
+.about_short_info {
+    display: flex;
+    column-gap: 35px;
+    padding: 22px 0;
+}
+
+.about_con h5 {
+    text-transform: uppercase;
+    color: #7371f9;
+    font-size: 18px;
+}
+
+.about_con h3 {
+    color: #222;
+    font-size: 40px;
+    margin: 0 0 30px;
+}
+
+.about_con p {
+    color: #615978;
+    font-size: 15px;
+    font-weight: 600;
+    margin: 0 0 16px;
+}
+
+.about_short_info li:nth-child(odd) {
+    text-transform: uppercase;
+    color: #222;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 0 0 4px;
+    padding-top: 14px;
+}
+
+.about_short_info li:nth-child(even) {
+    color: #615978;
+    font-size: 18px;
+}
+
+.about_btn {
+    /* padding-top: 20px; */
+    padding: 20px;
+    text-transform: uppercase;
+}
+
+.about_btn a:hover {
+    background: #7371f9;
+    /* color: #222; */
+    color: #fff;
+    border: 2px solid #7371f9;
+}
+
+.about_btn a {
+    padding: 15px 32px;
+    /* background: #7371f9; */
+    background: transparent;
+    /* color: #fff; */
+    color: #222;
+    font-family: 'poppins';
+    font-size: 16px;
+    font-weight: 700;
+    border-radius: 5px;
+    margin: 0 5px;
+    border: 2px solid #7371f9;
+    transition: 0.6s;
+    display: inline-block;
+}
+
+.skill_part {
+    background: url(../image/skill.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 130px 0;
+}
+
+.skill_con_main {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.skil_con {
+    width: 50%;
+}
+
+.skil_con h5 {
+    text-transform: uppercase;
+    color: #7371f9;
+    font-size: 18px;
+}
+
+.skil_con h3 {
+    color: #fff;
+    font-size: 48px;
+    margin: 0 0 36px;
+}
+
+.skil_con p {
+    color: #bdb9cb;
+    font-size: 20px;
+}
+
+.progress_part {
+    width: 50%;
+}
+
+.progress_con {
+    display: flex;
+    justify-content: space-between;
+}
+
+.progress_con h4 {
+    color: #fff;
+    font-size: 18px;
+}
+
+.progress_con p {
+    color: #7371f9;
+}
+
+.progress_bar {
+    padding-top: 10px;
+    padding-bottom: 22px;
+}
+
+.white_area {
+    height: 9px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+}
+.achievement_field {
+    height: 9px;
+    width: 84%;
+    background: #7371f9;
+    border-radius: 5px;
+}
+
+/*
+  Aktir "parent" er moddhe bivinno "child" thakle tader nirdishto gulake kaj koranor jonno "nth-child" diye   kaj korate hoy---> for example:--->
+
+ .about_short_info li:nth-child(2) {
+    color: cadetblue;
+ } 
+ & so on...
+ Aigular moddhe bijor hole "odd" diye & jor hole "even" diye kaj adai kore nite hoy---> for example:--->
+
+ .about_short_info li:nth-child(odd) {
+    color: cadetblue;
+ } 
+ & so on...
+
+ .about_short_info li:nth-child(even) {
+    color: cadetblue;
+ } 
+ & so on...
+*/
